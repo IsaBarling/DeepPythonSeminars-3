@@ -66,7 +66,9 @@ print("Максимальное количество вариантов запо
 answer = input("Хотите получить все возможные варианты наполнения рюкзака? (да/нет): ")
 if answer.lower() == "да":
     print("\nВсе возможные варианты наполнения рюкзака:")
+    text = ""
     for combination in item_combinations:
-        print(", ".join(combination))
+        text += ", ".join(combination) + "\r\n\r\n"
+    print(text)
 else:
     print("\nПриятного путешествия!")
